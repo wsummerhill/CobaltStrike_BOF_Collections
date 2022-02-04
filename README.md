@@ -5,7 +5,7 @@ Useful Cobalt Strike BOFs found or used during red teaming and penetration testi
 
 - [**InlineExecute-Assembly**](https://github.com/anthemtotheego/InlineExecute-Assembly)<br />
 Perform .NET assembly execution of any .NET executable without any prior modifications required<br />
-The BOF also supports several flags to disabling AMSI via in memory patching, disabling and restoring ETW via in memory patching, or customization of the CLR App Domain name to be created
+The BOF also supports several flags to disabling AMSI via in memory patching, disabling and restoring ETW via in memory patching, or customization of the CLR App Domain name to be created<br />
 ```inlineExecute-Assembly --dotnetassembly /home/Seatbelt.exe --assemblyargs AntiVirus AppLocker --etw --amsi --mailslot totallyLegitMailslot```
 
 - [**inject-assembly**](https://github.com/kyleavery/inject-assembly)<br />

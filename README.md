@@ -1,6 +1,34 @@
 # CobaltStrike BOF Collections
 Useful Cobalt Strike BOFs found or used during red teaming and penetration testing engagements
 
+---
+### Enumeration
+
+- [**Situational Awareness BOF**](https://github.com/trustedsec/CS-Situational-Awareness-BOF)<br />
+BOF that provides host enumeration and awarness commands which are more opsec friendly<br />
+Example commands include:
+```
+arp --> List arp tables
+ipconfig --> Run ipconfig
+ldapsearch [query]
+listdns --> Pulls DNS cache
+netuser [username] [opt: domain] --> Get info on user account
+nslookup [hostname] --> Perform DNS query
+tasklist --> Get local running processes
+```
+
+- [**Find Objects BOF**](https://github.com/outflanknl/FindObjects-BOF)<br />
+Use direct system calls to enumerate processes for specific loaded modules (amsi.dll, clr.dll) or process handles (lsass.exe)<br />
+Avoids fork&run<br />
+```
+FindModule amsi.dll
+FindProcHandle lsass.exe
+```
+
+- []()
+
+- []()
+---
 ### Executing .NET Assemblies
 
 - [**InlineExecute-Assembly**](https://github.com/anthemtotheego/InlineExecute-Assembly)<br />
@@ -16,29 +44,12 @@ Another alternative .NET executable loader to inject an assembly into a running 
 
 - []()
 
-- []()
+---
+### Exploitation
 
-- [**Situational Awareness BOF**](https://github.com/trustedsec/CS-Situational-Awareness-BOF)<br />
-BOF that provides host enumeration and awarness commands which are more opsec friendly<br />
-Example commands include:
-```
-arp --> List arp tables
-ipconfig --> Run ipconfig
-listdns --> Pulls DNS cache
-netuser [username] [opt: domain] --> Get info on user account
-nslookup [hostname] --> Perform DNS query
-tasklist --> Get local running processes
-
-```
-
-- [**Find Objects BOF**](https://github.com/outflanknl/FindObjects-BOF)<br />
-Use direct system calls to enumerate processes for specific loaded modules (amsi.dll, clr.dll) or process handles (lsass.exe)<br />
-Avoids fork&run<br />
-```
-FindModule amsi.dll
-FindProcHandle lsass.exe
-```
-
+- [**MiniDumpWriteDump**](https://github.com/rookuu/BOFs)<br />
+Uses static syscalls to dump a process such as LSASS to output file
+```minidumpwritedump <PID> <path_of_dmp?>```
 
 
 - []()

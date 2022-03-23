@@ -25,7 +25,21 @@ FindModule amsi.dll
 FindProcHandle lsass.exe
 ```
 
-- []()
+- [**BOF Collection**](https://github.com/rvrsh3ll/BOF_Collection)<br />
+A set of BOFs useful for enumeration and exploitation. Examples include:<br />
+```
+inline-execute GetDomainInfo.o --> Get domain info from DC
+
+inline-execute GetClipboard.o --> Prints any text on the user's clipboard
+
+enumwifi --> Enumerate wifi connections
+dumpwifi Wifi_Profile_Name --> Dump wifi cleartext credentials
+
+bofportscan 192.168.1.10 3389 --> Port scanner
+
+inline-execute RegistryPersistence.o Install --> Install registry persistence
+inline-execute RegistryPersistence.o Remove --> Remove registry persistence
+```
 
 - []()
 ---
@@ -52,6 +66,8 @@ Uses static syscalls to dump a process such as LSASS to output file
 ```minidumpwritedump <PID> <path_of_dmp?>```
 
 
-- []()
+- [**Unhook BOF**](https://github.com/rsmudge/unhook-bof)<br />
+Created by Raphael Mudge, this BOF will attempt to unhook APIs to evade EDR.<br />
+ ```unhook```
 
 - []()

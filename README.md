@@ -67,7 +67,7 @@ Uses static syscalls to dump a process such as LSASS to output file
 
 
 - [**Unhook BOF**](https://github.com/rsmudge/unhook-bof)<br />
-Created by Raphael Mudge, this BOF will attempt to unhook APIs to evade EDR.<br />
+Created by Raphael Mudge, this BOF will attempt to unhook userland APIs to bypass EDR.<br />
  ```unhook```
 
 - [**WdToggle**](https://github.com/outflanknl/WdToggle)<br />

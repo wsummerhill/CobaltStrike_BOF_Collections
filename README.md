@@ -1,5 +1,5 @@
 # CobaltStrike BOF Collections
-Useful Cobalt Strike BOFs found or used during red teaming and penetration testing engagements
+Useful Cobalt Strike Beacon Object Files (BOFs) used during red teaming and penetration testing engagements.
 
 ---
 ### Enumeration
@@ -70,4 +70,10 @@ Uses static syscalls to dump a process such as LSASS to output file
 Created by Raphael Mudge, this BOF will attempt to unhook APIs to evade EDR.<br />
  ```unhook```
 
-- []()
+- [**WdToggle**](https://github.com/outflanknl/WdToggle)<br />
+Enables WDigest credential caching using direct system calls<br />
+Bypasses Windows Credential Guard if enabled<br />
+```
+inline-execute WdToggle.o --> First enable WdDigest caching
+logonpasswords --> Second, wait for people to login and then run Mimikatz to dump potential cleartext passwords
+```

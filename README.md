@@ -102,3 +102,9 @@ Bypasses Windows Credential Guard if enabled<br />
 inline-execute WdToggle.o --> First enable WdDigest caching
 logonpasswords --> Second, wait for users to login and then run Mimikatz to dump their newly cached cleartext passwords
 ```
+
+---
+### Miscellaneous
+
+- [**BOF Template**](https://github.com/Cobalt-Strike/bof_template)<br />
+Used for creating your very own BOFs!

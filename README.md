@@ -55,6 +55,17 @@ wts_enum_remote_processes <host> --> Enumerate remote processes using WTS APIs
 unhook <module>, unhook ntdll.dll --> Use direct syscalls to unhook APIs of a specific DLL (works only on 64-bit beacons)
 ```
 
+- [**Outflank C2 Tool Collection**](https://github.com/outflanknl/C2-Tool-Collection)<br />
+Great list of useful tools converted to BOFs for better opsec.<br />
+Tools like add machine account, kerberoast, LAPS password dump, SMB info, LDAP AD spray, and more!
+```
+AddMachineAccount [*Computername] [Optional Password] --> Create new machine account - requires MachineAccountQuota to create new account
+Domaininfo --> Enumerate AD domain
+Lapsdump <computername> --> Dump LAPS passwowrds on remote systems within AD (requires elevated privileges on target)
+Smbinfo <compuername> --> Get SMB info of remote system
+Winver --> Shows the version of Windows that is running on the local system
+```
+
 ---
 ### Executing .NET Assemblies
 

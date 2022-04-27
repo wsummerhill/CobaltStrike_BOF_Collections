@@ -4,7 +4,7 @@ Useful Cobalt Strike Beacon Object Files (BOFs) used during red teaming and pene
 ---
 ### Enumeration
 
-- [**Situational Awareness BOF**](https://github.com/trustedsec/CS-Situational-Awareness-BOF)<br />
+- [**TrustedSec Situational Awareness BOF**](https://github.com/trustedsec/CS-Situational-Awareness-BOF)<br />
 BOF that provides host enumeration and awarness commands which are more opsec friendly<br />
 Example commands include:<br />
 ```
@@ -101,6 +101,18 @@ Bypasses Windows Credential Guard if enabled<br />
 ```
 inline-execute WdToggle.o --> First enable WdDigest caching
 logonpasswords --> Second, wait for users to login and then run Mimikatz to dump their newly cached cleartext passwords
+```
+
+- [**TrustedSec CS-Remote-OPs-BOF**](https://github.com/trustedsec/CS-Remote-OPs-BOF)<br />
+Great repo of new BOFs from TrustedSec to follow up their SituationalAwareness BOFs.<br />
+Includes dumping a process, decrypting Chrome keys, persistence techniques (registry, scheduled tasks, services), and more!
+```
+adcs_request --> Request an enrollment certificate
+procdump --> Dump specified process to output file
+reg_set --> Set/create a registry key
+sc_create --> Create a new service
+schtaskscreate --> Create a new scheduled task
+setuserpass --> Set a users password
 ```
 
 ---

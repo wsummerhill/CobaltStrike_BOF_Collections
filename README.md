@@ -126,6 +126,14 @@ schtaskscreate --> Create a new scheduled task
 setuserpass --> Set a users password
 ```
 
+- [**Inject AMSI Bypass**](https://github.com/boku7/injectAmsiBypass)<br />
+BOF that bypasses AMSI in a remote process with code injection<br />
+```inject-amsiBypass <PID>```
+
+- [**Inject ETW Bypass**](https://github.com/boku7/injectEtwBypass)<br />
+Inject ETW Bypass into Remote Process via Syscalls<br />
+```injectEtwBypass <PID>```
+
 ---
 ### Miscellaneous
 

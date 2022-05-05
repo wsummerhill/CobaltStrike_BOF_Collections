@@ -134,6 +134,11 @@ BOF that bypasses AMSI in a remote process with code injection<br />
 Inject ETW Bypass into Remote Process via Syscalls<br />
 ```injectEtwBypass <PID>```
 
+- [**Kerberoast BOF**](https://github.com/cube0x0/BofRoast)<br />
+BOF for targeted Kerberoasting against input SPN to roast<br />
+Returns TGS that you can pass to apreq2hashcat.py (provided in repo) to output the hashcat format<br />
+```kerberoast SPN/HOSTNAME.domain.local```
+
 ---
 ### Miscellaneous
 

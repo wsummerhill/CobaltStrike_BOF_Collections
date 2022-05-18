@@ -144,3 +144,9 @@ Returns TGS that you can pass to apreq2hashcat.py (provided in repo) to output t
 
 - [**BOF Template**](https://github.com/Cobalt-Strike/bof_template)<br />
 Used for creating your very own BOFs!
+
+- [**BOF Hound**](https://github.com/fortalice/bofhound)<br />
+An offline BloodHound ingestor and LDAP parser to be used with TrustedSec's ["ldapsearch"](https://github.com/trustedsec/CS-Situational-Awareness-BOF).<br />
+Use ldapsearch in Cobalt Strike to gather data and then use bofhound on your CS logs to generate JSON files for importing into BloodHound.<br />
+```bofhound -o /data/```
+

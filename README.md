@@ -150,3 +150,6 @@ An offline BloodHound ingestor and LDAP parser to be used with TrustedSec's ["ld
 Use ldapsearch in Cobalt Strike to gather data and then use bofhound on your CS logs to generate JSON files for importing into BloodHound.<br />
 ```bofhound -o /data/```
 
+- [**Help Color**](https://github.com/outflanknl/HelpColor)<br />
+Color helper Aggressor script for coloring "help" output based on command type and OPSEC<br />
+```helpx```

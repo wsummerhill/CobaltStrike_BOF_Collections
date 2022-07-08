@@ -139,6 +139,27 @@ BOF for targeted Kerberoasting against input SPN to roast<br />
 Returns TGS that you can pass to apreq2hashcat.py (provided in repo) to output the hashcat format<br />
 ```kerberoast SPN/HOSTNAME.domain.local```
 
+- [**Koh**](https://github.com/GhostPack/Koh)<br />
+GhostPack BOF that allows for the capture of user credentials via purposeful token/logon session leakage.<br />
+Koh has a BOF client for capturing logon tokens in Cobalt Strike and a C# capture server to negotiate captured tokens for new logon sessions.<br />
+```
+# Koh client
+help koh
+  koh list              - lists captured tokens
+  koh groups LUID       - lists the group SIDs for a captured token
+  koh filter list       - lists the group SIDs used for capture filtering
+  koh filter add SID    - adds a group SID for capture filtering
+  koh filter remove SID - removes a group SID from capture filtering
+  koh filter reset      - resets the SID group capture filter
+  koh impersonate LUID  - impersonates the captured token with the give LUID
+  koh release all       - releases all captured tokens
+  koh release LUID      - releases the captured token for the specified LUID
+  koh exit              - signals the Koh server to exit
+
+koh list --> list captured tokens
+koh impersonate LUID --> Impersonate a captured token from above output
+```
+
 ---
 ### Miscellaneous
 

@@ -143,7 +143,7 @@ Returns TGS that you can pass to apreq2hashcat.py (provided in repo) to output t
 GhostPack BOF that allows for the capture of user credentials via purposeful token/logon session leakage.<br />
 Koh has a BOF client for capturing logon tokens in Cobalt Strike and a C# capture server to negotiate captured tokens for new logon sessions.<br />
 ```
-# Koh client
+# Koh client BOF
 help koh
   koh list              - lists captured tokens
   koh groups LUID       - lists the group SIDs for a captured token

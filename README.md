@@ -156,8 +156,10 @@ help koh
   koh release LUID      - releases the captured token for the specified LUID
   koh exit              - signals the Koh server to exit
 
-koh list --> list captured tokens
-koh impersonate LUID --> Impersonate a captured token from above output
+koh list --> List current logon sessions
+koh impersonate <LUID> --> Impersonate a logon session from above output
+
+ls \\dc.theshire.local\C$ --> Use the impersonated privileged logon session to interact with a target system
 ```
 
 ---

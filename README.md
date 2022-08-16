@@ -101,6 +101,16 @@ The BOF also supports several flags to disabling AMSI via in memory patching, di
 Another alternative .NET executable loader to inject an assembly into a running process<br />
 ```inject-assembly 0 /home/Rubeus.exe [args...]```
 
+- [**BOF.NET**]([https://github.com/kyleavery/inject-assembly](https://github.com/CCob/BOF.NET))<br />
+Critical tool for red teams that allows you to run .NET assemblies as BOFs within the beacon process<br />
+```
+bofnet_init --> Start BOF.NET
+bofnet_listassemblies --> List loaded .NET assemblies
+bofnet_load /Path/To/Assembly.exe --> Load assembly
+bofnet_execute bof_name [args] --> Execute assembly
+bofnet_shutdown --> Kill BOF.NET
+```
+
 ---
 ### Exploitation
 

@@ -66,7 +66,7 @@ Lapsdump <computername> --> Dump LAPS passwowrds on remote systems within AD (re
 Psc --> Show detailed information from processes with established TCP and RDP connections
 Psw --> 	Show window titles from processes with active windows
 Psx --> Show detailed information from all processes running on the system and provides a summary of installed security products and tools.
-Smbinfo <compuername> --> Get SMB info of remote system
+Smbinfo <compuername> --> Get SMB info of remote system instead of using CS portscan SMB
 Winver --> Shows the version of Windows that is running on the local system
 ```
 

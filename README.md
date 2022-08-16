@@ -59,9 +59,12 @@ unhook <module>, unhook ntdll.dll --> Use direct syscalls to unhook APIs of a sp
 Great list of useful tools converted to BOFs for better opsec.<br />
 Tools like add machine account, kerberoast, LAPS password dump, SMB info, LDAP AD spray, and more!
 ```
+GetMachineAccountQuota --> Get domain machine account quota
 AddMachineAccount [*Computername] [Optional Password] --> Create new machine account - requires MachineAccountQuota to create new account
 Domaininfo --> Enumerate AD domain
 Lapsdump <computername> --> Dump LAPS passwowrds on remote systems within AD (requires elevated privileges on target)
+Psw --> 	Show window titles from processes with active windows
+Psx --> Show detailed information from all processes running on the system and provides a summary of installed security products and tools.
 Smbinfo <compuername> --> Get SMB info of remote system
 Winver --> Shows the version of Windows that is running on the local system
 ```

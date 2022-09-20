@@ -195,6 +195,14 @@ koh impersonate <LUID> --> Impersonate a logon session from above output
 ls \\dc.theshire.local\C$ --> Use the impersonated privileged logon session to interact with a target system
 ```
 
+- [**Cobalt-Clip**](https://github.com/DallasFR/Cobalt-Clip)<br />
+A clipboard add-on for Cobalt Strike to interact with the victim's clipboard. With Cobalt-Clip you can dump, edit and monitor the content of a clipboard.<br />
+```
+dumpclip --> Dump current contents of clipboard
+set-clipboard-data --> Modify victims clipboard data
+clipmon --> Monitor the clipboard for new content and output to console
+```
+
 ---
 ### Miscellaneous
 

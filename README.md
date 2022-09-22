@@ -203,6 +203,21 @@ set-clipboard-data --> Modify victims clipboard data
 clipmon --> Monitor the clipboard for new content and output to console
 ```
 
+- [**BOF-patchit**](https://github.com/ScriptIdiot/BOF-patchit/)<br />
+A very easy solution to patch AMSI or ETW. Patches AMSI/ETW for the currently running x64 process.
+```
+patchit check --> List if AMSI or ETW are currently patched
+patchit all --> Patch both AMSI and ETW
+patchit amsi --> Only patch AMSI
+patchit etw --> Only patch ETW
+
+# DO NEFARIOUS STUFF HERE....
+
+patchit revertAll --> Revert both AMSI and ETW
+patchit revertAmsi --> Revert only AMSI
+patchit revertEtw --> Revert only ETW
+```
+
 ---
 ### Miscellaneous
 

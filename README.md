@@ -62,6 +62,8 @@ Tools like add machine account, kerberoast, LAPS password dump, SMB info, LDAP A
 GetMachineAccountQuota --> Get domain machine account quota
 AddMachineAccount [*Computername] [Optional Password] --> Create new machine account - requires MachineAccountQuota to create new account
 Domaininfo --> Enumerate AD domain
+Kerberoast list --> List SPN enabled accounts
+Kerberoast roast SamAccountName --> Kerberoast specific username
 Lapsdump <computername> --> Dump LAPS passwowrds on remote systems within AD (requires elevated privileges on target)
 Psc --> Show detailed information from processes with established TCP and RDP connections
 Psw --> 	Show window titles from processes with active windows
@@ -217,6 +219,10 @@ patchit revertAll --> Revert both AMSI and ETW
 patchit revertAmsi --> Revert only AMSI
 patchit revertEtw --> Revert only ETW
 ```
+
+- [**ScreenshotBOF**](https://github.com/CodeXTF2/ScreenshotBOF)<br />
+Uses WinAPI and avoids fork&run to take a screenshot.<br />
+`screenshot_bof output.bmp 1`
 
 ---
 ### Miscellaneous

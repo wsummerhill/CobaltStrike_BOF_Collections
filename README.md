@@ -136,6 +136,12 @@ Uses direct syscalls generated from [https://github.com/outflanknl/InlineWhisper
 Dump the LSASS process via the silent process exit mechanism into the C:\Temp directory<br />
 ```silentLsassDump <LSASS PID>```
 
+- [**RegSave BOF**](https://github.com/EncodeGroup/BOF-RegSave)<br />
+BOF to dump SAM, SYSTEM, and SECURITY database from a local system. <br />
+```
+bof-regsave c:\temp\ --> Dumps SAM database files to target folder C:\temp\
+```
+
 - [**Unhook BOF**](https://github.com/rsmudge/unhook-bof)<br />
 Created by Raphael Mudge, this BOF will attempt to unhook userland APIs to bypass EDR<br />
 Sort of the "hail mary" for attempting to unhook APIs<br />
@@ -238,3 +244,6 @@ Use ldapsearch in Cobalt Strike to gather data and then use bofhound on your CS 
 - [**Help Color**](https://github.com/outflanknl/HelpColor)<br />
 Color helper Aggressor script for coloring "help" output based on command type and OPSEC<br />
 ```helpx```
+
+- [**nanorubeus**](https://github.com/wavvs/nanorobeus)<br />
+BOF equivalent of Rubeus for managing Kerberos tickets. Sadly it doesn't work in Cobalt Strike but it could be converted if needed. Instead it can be used in other C2s supporting BOF/COFFs such as Sliver and Brute Ratel.<br />

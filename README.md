@@ -91,6 +91,12 @@ Now use .ccache or .kirbi files to load TGT into memory <br />
 ```export KRB5CCNAME=/home/loki@MARVEL.LOCAL.ccache``` <br />
 Continue to use ticket in memory with other tooling of your choice! (i.e. Impacket's "**-k -no-pass**" command) <br />
 
+
+- [**PrivKit**](https://github.com/mertdas/PrivKit)<br />
+Windows privilege escalation BOF kit used for detecting priv esc vulnerabilities including unquoted service paths, hijackable paths, autologon registry keys, etc.<br />
+Check for all vulnerabilities supported: <br />
+```privcheck```
+
 ---
 ### Executing .NET Assemblies
 

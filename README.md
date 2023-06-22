@@ -236,6 +236,15 @@ patchit revertEtw --> Revert only ETW
 Uses WinAPI and avoids fork&run to take a screenshot.<br />
 `screenshot_bof output.bmp 1`
 
+- [**nanorubeus**](https://github.com/wavvs/nanorobeus)<br />
+BOF equivalent of Rubeus for managing Kerberos tickets. It can be used cross-platform for multiple C2s including Cobalt Strike, Sliver and Brute Ratel.<br />
+```
+nanorobeus64 luid --> Get logon current ID
+nanorobeus64 klist --> List all Kerberos tickets
+nanorobeus64 dump /all --> Dump all Kerberos tickets, requires local admin privileges
+nanorobeus64 kerberoast /spn:HTTP/server.fortress.local --> Kerberoast a specific SPN
+```
+
 ---
 ### Miscellaneous
 
@@ -250,9 +259,6 @@ Use ldapsearch in Cobalt Strike to gather data and then use bofhound on your CS 
 - [**Help Color**](https://github.com/outflanknl/HelpColor)<br />
 Color helper Aggressor script for coloring "help" output based on command type and OPSEC<br />
 ```helpx```
-
-- [**nanorubeus**](https://github.com/wavvs/nanorobeus)<br />
-BOF equivalent of Rubeus for managing Kerberos tickets. Sadly it doesn't work in Cobalt Strike but it could be converted if needed. Instead it can be used in other C2s supporting BOF/COFFs such as Sliver and Brute Ratel.<br />
 
 - [**Hidden Desktop BOF**](https://github.com/WKL-Sec/HiddenDesktop)<br />
 Uses VNC connection and server to create a hidden remote desktop connection to your target instead of using RDP. <br />

@@ -1,3 +1,8 @@
+# DEPRECATED: Project moved to other [Repo Here](https://github.com/wsummerhill/CobaltStrike_RedTeam_CheatSheet/blob/main/CobaltStrike/BOF_Collections.md)
+
+
+---
+
 # CobaltStrike BOF Collections
 Useful Cobalt Strike Beacon Object Files (BOFs) used during red teaming and penetration testing engagements.
 

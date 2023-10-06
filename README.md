@@ -1,4 +1,4 @@
-# DEPRECATED: Project moved to my other [Repo Here](https://github.com/wsummerhill/C2_RedTeam_CheatSheet/blob/main/CobaltStrike/BOF_Collections.md)
+# DEPRECATED: Project moved to my other [Repo Here](https://github.com/wsummerhill/C2_RedTeam_CheatSheets/blob/main/CobaltStrike/BOF_Collections.md)
 
 
 ---
